@@ -1,7 +1,5 @@
-// Taken and edited from https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js because when I added the script file into the index.html, it doesn't work, when I imported it using 'import' in my Form.js file, it threw an error. Then I tried several libraries, but it also doesn't work. Therefore, I had to do this. If you have a suggestion to tackle this problem, please let me know.
-
 const seededRandom = function (seed) {
-  var m = 2**35 - 31;
+  var m = 2**20 - 30;
   var a = 185852;
   var s = seed % m;
   return function () {
